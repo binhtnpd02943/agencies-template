@@ -5,7 +5,7 @@ import * as path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	base: '/slim-free-react-mui-template',
+	base: './',
 	plugins: [react(), eslint()],
 	resolve: {
 		alias: [
