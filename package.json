@@ -17,6 +17,7 @@
 		"predeploy": "npm run build && cp ./dist/index.html ./dist/404.html",
 		"deploy": "gh-pages -d dist"
 	},
+	"packageManager": "yarn@1.22.19",
 	"dependencies": {
 		"@ant-design/icons": "^6.0.0",
 		"@emotion/react": "^11.10.6",
