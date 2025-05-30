@@ -12,22 +12,22 @@ import CardHeader from '@/components/cardHeader';
 
 const ACTIVITIES_DATA = [
 	{
-		title: 'Report has been updated',
+		title: 'Báo cáo đã được cập nhật',
 		color: 'info.main',
 		Icon: BarChartIcon,
 	},
 	{
-		title: 'Achievement Unlocked',
+		title: 'Đã mở khóa thành tích',
 		color: 'success.main',
 		Icon: MilitaryTechIcon,
 	},
 	{
-		title: 'Added new images',
+		title: 'Đã thêm hình ảnh mới',
 		color: 'warning.main',
 		Icon: ImageOutlinedIcon,
 	},
 	{
-		title: 'Report has been updated',
+		title: 'Báo cáo đã được cập nhật',
 		color: 'tertiary.main',
 		Icon: PostAddIcon,
 	},
@@ -37,12 +37,12 @@ function ActivitiesCard() {
 	return (
 		<Card>
 			<CardHeader
-				title="Recent Activities"
+				title="Hoạt động gần đây"
 				size="small"
 				sx={{
 					mb: 2,
 				}}
-				subtitle="Last activity was 1 hour ago"
+				subtitle="Hoạt động gần nhất cách đây 1 giờ"
 			/>
 			<Stack direction="column" spacing={0}>
 				{ACTIVITIES_DATA.map((activity, index) => (
@@ -86,7 +86,7 @@ function ActivityListItem({ activity: { title, color, Icon } }) {
 				<Typography variant="body1" color="text.secondary">
 					Aenean vulputate eleifend tellus. Aenean leo.
 				</Typography>
-				<Typography variant="caption">2 hours ago</Typography>
+				<Typography variant="caption">2 giờ trước</Typography>
 			</Stack>
 		</Stack>
 	);

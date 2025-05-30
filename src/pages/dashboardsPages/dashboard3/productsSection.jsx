@@ -29,19 +29,19 @@ function ProductsSection() {
 		<Card type="none">
 			<Stack direction="column">
 				<CardHeader
-					title="Products Purchases"
+					title="Mua hàng sản phẩm"
 					size="small"
 					sx={{
 						m: 2,
 					}}
 				>
 					<ButtonGroup variant="outlined" size="small" aria-label="temporaly button group">
-						{['Today', 'This Month', 'This Week'].map((tab, i) => (
+						{['Hôm nay', 'Tháng này', 'Tuần này'].map((tab, i) => (
 							<Button
 								key={i}
-								variant={tab === 'This Week' ? 'contained' : 'outlined'}
+								variant={tab === 'Tuần này' ? 'contained' : 'outlined'}
 								sx={{
-									...(tab === 'This Week' && {
+									...(tab === 'Tuần này' && {
 										outline: (theme) => `2px solid ${theme.palette.primary.main}`,
 									}),
 								}}
@@ -59,7 +59,7 @@ function ProductsSection() {
 						m: 1,
 					}}
 				>
-					View All Products
+					Xem tất cả sản phẩm
 				</Button>
 			</Stack>
 		</Card>
@@ -149,19 +149,19 @@ const STATUS_CONFIG = {
 function ProductsTable() {
 	return (
 		<TableContainer>
-			<Table aria-label="products purchases table" size="medium">
+			<Table aria-label="bảng mua hàng sản phẩm" size="medium">
 				<TableHead>
 					<TableRow>
-						<TableCell>Item</TableCell>
+						<TableCell>Sản phẩm</TableCell>
 						<TableCell align="left" padding="none" sx={{ minWidth: 140 }}>
-							Item Details
+							Chi tiết sản phẩm
 						</TableCell>
-						<TableCell align="right">Sold</TableCell>
-						<TableCell align="center">Location</TableCell>
-						<TableCell align="left">Gain</TableCell>
-						<TableCell align="right">Added</TableCell>
-						<TableCell align="right">Updated</TableCell>
-						<TableCell align="center">Actions</TableCell>
+						<TableCell align="right">Đã bán</TableCell>
+						<TableCell align="center">Quốc gia</TableCell>
+						<TableCell align="left">Tăng trưởng</TableCell>
+						<TableCell align="right">Ngày thêm</TableCell>
+						<TableCell align="right">Cập nhật</TableCell>
+						<TableCell align="center">Thao tác</TableCell>
 					</TableRow>
 				</TableHead>
 				<TableBody>
@@ -205,7 +205,13 @@ function ProductsTableRow({ purchase }) {
 						borderRadius="50%"
 					/>
 					<Typography variant="caption" color="text.tertiary">
-						{stock?.title}
+						{(() => {
+							if (stock?.title === '20 remaining') return 'Còn 20';
+							if (stock?.title === 'In stock') return 'Còn hàng';
+							if (stock?.title === '45 remaining') return 'Còn 45';
+							if (stock?.title === 'Paused') return 'Tạm dừng';
+							return stock?.title;
+						})()}
 					</Typography>
 				</Stack>
 			</TableCell>
@@ -233,17 +239,25 @@ function ProductsTableRow({ purchase }) {
 						{gain}
 						%&nbsp;
 					</Typography>
-					from last week
+					so với tuần trước
 				</Typography>
 			</TableCell>
 			<TableCell align="right">
 				<Typography variant="body1" color="text.tertiary">
-					{added}
+					{added
+						.replace('Today', 'Hôm nay')
+						.replace('This Month', 'Tháng này')
+						.replace('This Week', 'Tuần này')}
 				</Typography>
 			</TableCell>
 			<TableCell align="right">
 				<Typography variant="body1" color="text.tertiary">
-					{updated}
+					{updated
+						.replace('an hour ago', '1 giờ trước')
+						.replace('3 hours ago', '3 giờ trước')
+						.replace('5 hours ago', '5 giờ trước')
+						.replace('1 day ago', '1 ngày trước')
+						.replace('a week ago', '1 tuần trước')}
 				</Typography>
 			</TableCell>
 			<TableCell align="center">

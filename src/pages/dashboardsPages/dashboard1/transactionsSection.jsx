@@ -23,7 +23,7 @@ function TransactionsSection() {
 		<Card type="none">
 			<Stack direction="column" alignItems="flex-start">
 				<Typography variant="h5" textTransform="uppercase" m={2}>
-					User Transaction History
+					Lịch sử giao dịch người dùng
 				</Typography>
 				<TransactionsTable />
 				<Button
@@ -33,7 +33,7 @@ function TransactionsSection() {
 						m: 1,
 					}}
 				>
-					View All Transaction History
+					Xem tất cả lịch sử giao dịch
 				</Button>
 			</Stack>
 		</Card>
@@ -47,10 +47,10 @@ const TRANSACTIONS_DATA = [
 		user: customersData.find((customer) => customer?.id === 1),
 		transId: '1234567890',
 		type: {
-			title: 'Email verified',
+			title: 'Đã xác minh email',
 			status: 'success',
 		},
-		date: 'Just Now',
+		date: 'Vừa xong',
 	},
 	{
 		id: uuid(),
@@ -58,10 +58,10 @@ const TRANSACTIONS_DATA = [
 		user: customersData.find((customer) => customer?.id === 2),
 		transId: '4234592890',
 		type: {
-			title: 'Pending verification',
+			title: 'Chờ xác minh',
 			status: 'warning',
 		},
-		date: 'Apr 21, 2017 8:34am',
+		date: '21/04/2017 8:34',
 	},
 	{
 		id: uuid(),
@@ -69,10 +69,10 @@ const TRANSACTIONS_DATA = [
 		user: customersData.find((customer) => customer?.id === 3),
 		transId: '7245567890',
 		type: {
-			title: 'Purchased success',
+			title: 'Mua hàng thành công',
 			status: 'success',
 		},
-		date: 'Apr 10, 2017 4:40pm',
+		date: '10/04/2017 16:40',
 	},
 	{
 		id: uuid(),
@@ -80,10 +80,10 @@ const TRANSACTIONS_DATA = [
 		user: customersData.find((customer) => customer?.id === 4),
 		transId: '8234568790',
 		type: {
-			title: 'Payment on hold',
+			title: 'Thanh toán bị giữ',
 			status: 'error',
 		},
-		date: 'Apr 02, 2017 6:45pm',
+		date: '02/04/2017 18:45',
 	},
 	{
 		id: uuid(),
@@ -91,10 +91,10 @@ const TRANSACTIONS_DATA = [
 		user: customersData.find((customer) => customer?.id === 5),
 		transId: '7234524890',
 		type: {
-			title: 'Account desactivated',
+			title: 'Tài khoản đã bị vô hiệu hóa',
 			status: '',
 		},
-		date: 'Mar 30, 2017 10:30am',
+		date: '30/03/2017 10:30',
 	},
 ];
 
@@ -117,9 +117,9 @@ function TransactionsTable() {
 				<TableHead>
 					<TableRow>
 						<TableCell> </TableCell>
-						<TableCell align="left">User</TableCell>
-						<TableCell align="left">Type</TableCell>
-						<TableCell align="left">Date</TableCell>
+						<TableCell align="left">Người dùng</TableCell>
+						<TableCell align="left">Loại</TableCell>
+						<TableCell align="left">Thời gian</TableCell>
 					</TableRow>
 				</TableHead>
 				<TableBody>
@@ -138,7 +138,7 @@ function TransactionRow({ transaction }) {
 		<TableRow hover>
 			<TableCell>
 				<Avatar
-					alt="User Img"
+					alt="Ảnh người dùng"
 					src={user?.avatarImg}
 					sx={{
 						width: 40,
@@ -161,7 +161,7 @@ function TransactionRow({ transaction }) {
 				>
 					{user?.name}
 				</Link>
-				<Typography variant="caption">TRANSID: {transId}</Typography>
+				<Typography variant="caption">MÃ GD: {transId}</Typography>
 			</TableCell>
 			<TableCell align="left">
 				<Stack direction="row" alignItems="center" spacing={1}>

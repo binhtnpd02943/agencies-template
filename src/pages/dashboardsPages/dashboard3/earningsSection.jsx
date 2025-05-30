@@ -68,13 +68,13 @@ function EarningsSection() {
 		>
 			<Stack direction="column" spacing={1} px={3} pt={3} flexGrow={1}>
 				<Typography fontSize={30} variant="subtitle1">
-					${counter.toLocaleString()}
+					{`$${counter.toLocaleString()}`}
 				</Typography>
 				<Typography variant="h5" fontWeight="500" textTransform="uppercase">
-					Today&apos;s earnings
+					Thu nhập hôm nay
 				</Typography>
 				<Typography variant="body2" color="text.secondary">
-					Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus...
+					Theo dõi thu nhập của bạn mỗi ngày và xem báo cáo chi tiết bên dưới.
 				</Typography>
 				<Button
 					variant="text"
@@ -85,7 +85,7 @@ function EarningsSection() {
 						textTransform: 'uppercase',
 					}}
 				>
-					View Report
+					Xem báo cáo
 				</Button>
 			</Stack>
 			<Chart

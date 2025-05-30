@@ -139,9 +139,10 @@ function BitcoinEarningsSection() {
 						BTC
 					</Typography>
 				</Typography>
-				<Typography variant="subtitle1">BITCOIN EARNINGS</Typography>
+				<Typography variant="subtitle1">THU NHẬP BITCOIN</Typography>
 				<Typography variant="body2" color="text.secondary" pb={2}>
-					Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus...
+					Chào mừng bạn đến với bảng điều khiển. Theo dõi thu nhập, ví và lượng khách truy cập của bạn tại
+					đây.
 				</Typography>
 				<Button
 					variant="outlined"
@@ -152,7 +153,7 @@ function BitcoinEarningsSection() {
 						textTransform: 'uppercase',
 					}}
 				>
-					View Statements
+					Xem sao kê
 				</Button>
 			</Stack>
 		</SectionContainer>
@@ -233,9 +234,10 @@ function EtereumWalletSection() {
 						ETH
 					</Typography>
 				</Typography>
-				<Typography variant="subtitle1">ETHEREUM WALLET</Typography>
+				<Typography variant="subtitle1">VÍ ETHEREUM</Typography>
 				<Typography variant="subtitle2">
-					Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus...
+					Chào mừng bạn đến với bảng điều khiển. Theo dõi thu nhập, ví và lượng khách truy cập của bạn tại
+					đây.
 				</Typography>
 				<Button
 					variant="text"
@@ -246,7 +248,7 @@ function EtereumWalletSection() {
 						textTransform: 'uppercase',
 					}}
 				>
-					View Report
+					Xem báo cáo
 				</Button>
 			</Stack>
 		</SectionContainer>
@@ -321,9 +323,10 @@ function MaleVisitorsSection() {
 				<Typography variant="subtitle1" fontSize={35}>
 					{counter.toLocaleString()}
 				</Typography>
-				<Typography variant="subtitle1">MALE VISITORS</Typography>
+				<Typography variant="subtitle1">KHÁCH NAM</Typography>
 				<Typography variant="subtitle2" color="text.secondary" pb={2}>
-					Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus...
+					Chào mừng bạn đến với bảng điều khiển. Theo dõi thu nhập, ví và lượng khách truy cập của bạn tại
+					đây.
 				</Typography>
 			</Stack>
 		</SectionContainer>
@@ -397,9 +400,10 @@ function FemaleVisitorsSection() {
 				<Typography variant="subtitle1" fontSize={35}>
 					{counter.toLocaleString()}
 				</Typography>
-				<Typography variant="subtitle1">FEMALE VISITORS</Typography>
+				<Typography variant="subtitle1">KHÁCH NỮ</Typography>
 				<Typography variant="subtitle2" color="text.secondary" pb={2}>
-					Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus...
+					Chào mừng bạn đến với bảng điều khiển. Theo dõi thu nhập, ví và lượng khách truy cập của bạn tại
+					đây.
 				</Typography>
 			</Stack>
 		</SectionContainer>

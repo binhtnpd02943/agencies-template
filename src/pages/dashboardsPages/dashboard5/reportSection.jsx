@@ -20,16 +20,16 @@ import CardHeader from '@/components/cardHeader';
 const REPORTS_DATA = [
 	{
 		total: 420,
-		type: 'employee',
+		type: 'nhân viên',
 		Icon: AccessibilityNewIcon,
 		series: [
 			{
-				name: 'Female',
+				name: 'Nữ',
 				percentage: 66,
 				color: 'cuaternary',
 			},
 			{
-				name: 'Male',
+				name: 'Nam',
 				percentage: 34,
 				color: 'error',
 			},
@@ -37,16 +37,16 @@ const REPORTS_DATA = [
 	},
 	{
 		total: 55,
-		type: 'products',
+		type: 'sản phẩm',
 		Icon: Inventory2Icon,
 		series: [
 			{
-				name: 'Digital products',
+				name: 'Sản phẩm số',
 				percentage: 85,
 				color: 'warning',
 			},
 			{
-				name: 'Non-digital products',
+				name: 'Sản phẩm thường',
 				percentage: 15,
 				color: 'success',
 			},
@@ -54,16 +54,16 @@ const REPORTS_DATA = [
 	},
 	{
 		total: 30,
-		type: 'franchise',
+		type: 'nhượng quyền',
 		Icon: LocationOnIcon,
 		series: [
 			{
-				name: 'Local',
+				name: 'Nội địa',
 				percentage: 75,
 				color: 'tertiary',
 			},
 			{
-				name: 'International',
+				name: 'Quốc tế',
 				percentage: 25,
 				color: 'secondary',
 			},
@@ -115,7 +115,7 @@ function ReportCard({ report }) {
 				{total}
 			</Typography>
 			<Typography variant="subtitle2" textTransform="uppercase" color="text.tertiary" pb={3}>
-				Total {type}
+				Tổng số {type}
 			</Typography>
 			<Rating
 				name="read-only"
@@ -198,15 +198,15 @@ function RevenueCard() {
 	return (
 		<Stack direction="column" spacing={1} p={3}>
 			<Typography variant="h5" fontSize={20}>
-				Monthly Revenue
+				Doanh thu hàng tháng
 			</Typography>
 			<Typography variant="body2" color="text.secondary">
-				Monthly Revenue
+				Doanh thu hàng tháng
 			</Typography>
 			<Typography variant="subtitle1" fontSize={35}>
 				$32,500
 				<Typography variant="caption" color="success.main">
-					1.4% up
+					Tăng 1.4%
 				</Typography>
 			</Typography>
 			<Chart
@@ -217,7 +217,7 @@ function RevenueCard() {
 				height="30%"
 			/>
 			<Typography variant="body1" color="text.secondary" align="center">
-				Last month: &nbsp;
+				Tháng trước: &nbsp;
 				<Typography variant="body2" component="span">
 					$79,554
 				</Typography>
@@ -230,19 +230,19 @@ function Header() {
 	return (
 		<CardHeader
 			size="large"
-			title="Overall Report Summary"
+			title="Tổng quan báo cáo"
 			subtitle={
 				<>
-					<CalendarMonthOutlinedIcon fontSize="small" /> January 01, 2023 - January 31, 2023
+					<CalendarMonthOutlinedIcon fontSize="small" /> 01/01/2023 - 31/01/2023
 				</>
 			}
 		>
 			<Stack direction="row" alignItems="center" spacing={1}>
 				<Button variant="contained" size="medium" color="primary" startIcon={<AccessTimeOutlinedIcon />}>
-					Activity logs
+					Nhật ký hoạt động
 				</Button>
 				<Button variant="contained" size="medium" color="primary" startIcon={<SettingsOutlinedIcon />}>
-					Edit Settings
+					Chỉnh sửa cài đặt
 				</Button>
 			</Stack>
 		</CardHeader>

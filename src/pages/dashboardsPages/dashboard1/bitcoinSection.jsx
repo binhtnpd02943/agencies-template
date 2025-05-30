@@ -17,7 +17,7 @@ import bitcoin1 from '@/assets/images/bitcoin_1.svg';
 import bitcoin2 from '@/assets/images/bitcoin_2.svg';
 
 const BITCOIN_CARD_DESCRIPTION =
-	'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Even the all-powerful Pointing has no control about the blind texts.';
+	'Ở nơi xa xôi, phía sau những dãy núi, xa các quốc gia Vokalia và Consonantia. Ngay cả Pointing quyền năng cũng không thể kiểm soát các văn bản mù.';
 
 function BitcoinSection() {
 	return (
@@ -26,17 +26,17 @@ function BitcoinSection() {
 				<Grid item xs={12} sm={6} md={4}>
 					<BitcoinCard
 						img={bitcoin1}
-						title="Safe & Secure"
+						title="An toàn & Bảo mật"
 						content={BITCOIN_CARD_DESCRIPTION}
-						buttonText="Getting Stared"
+						buttonText="Bắt đầu ngay"
 					/>
 				</Grid>
 				<Grid item xs={12} sm={6} md={4}>
 					<BitcoinCard
 						img={bitcoin2}
-						title="Instant Exchange"
+						title="Trao đổi tức thì"
 						content={BITCOIN_CARD_DESCRIPTION}
-						buttonText="Take a Tour"
+						buttonText="Khám phá ngay"
 					/>
 				</Grid>
 				<Grid item xs={12} sm={12} md={4}>
@@ -97,7 +97,7 @@ function SalesCard() {
 		>
 			<Stack direction="column" spacing={1} justifyContent="center">
 				<Typography color="primary.main" variant="h5" textTransform="uppercase">
-					Sales Report
+					Báo cáo doanh số
 				</Typography>
 				<Stack
 					width="100%"
@@ -107,16 +107,22 @@ function SalesCard() {
 					justifyContent="space-between"
 					pb={2}
 				>
-					{SALES_DATA.map(({ id, type, total }) => (
-						<div key={id}>
-							<Typography variant="subtitle2" gutterBottom>
-								{type}
-							</Typography>
-							<Typography variant="subtitle1" component="div">
-								{total}
-							</Typography>
-						</div>
-					))}
+					{SALES_DATA.map(({ id, type, total }) => {
+						let typeLabel = '';
+						if (type === 'Today') typeLabel = 'Hôm nay';
+						else if (type === 'This Week') typeLabel = 'Tuần này';
+						else typeLabel = 'Tháng này';
+						return (
+							<div key={id}>
+								<Typography variant="subtitle2" gutterBottom>
+									{typeLabel}
+								</Typography>
+								<Typography variant="subtitle1" component="div">
+									{total}
+								</Typography>
+							</div>
+						);
+					})}
 				</Stack>
 
 				<Box
@@ -150,7 +156,7 @@ function SalesCard() {
 						</Typography>
 					</Box>
 				</Box>
-				<Typography color="text.secondary">Maecenas tempus, tellus eget conditum rhon.</Typography>
+				<Typography color="text.secondary">Thời gian: Maecenas tempus, tellus eget conditum rhon.</Typography>
 			</Stack>
 		</Card>
 	);
@@ -204,7 +210,7 @@ function ImpressionsCard() {
 		>
 			<Stack direction="column" spacing={1} pb={6}>
 				<Typography color="primary.main" variant="h5" textTransform="uppercase">
-					Impressions
+					Lượt hiển thị
 				</Typography>
 				<Typography variant="body2" fontSize={27}>
 					323,360
@@ -225,7 +231,7 @@ function ImpressionsCard() {
 						2.5%
 					</Typography>
 					<Typography variant="body1" color="text.secondary">
-						change from yesterday
+						thay đổi so với hôm qua
 					</Typography>
 				</Stack>
 			</Stack>

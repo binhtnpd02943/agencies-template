@@ -26,7 +26,7 @@ function ProductsSection() {
 		<Card type="none">
 			<Stack direction="column" alignItems="flex-start">
 				<Typography variant="h5" textTransform="uppercase" m={2}>
-					Products Purchases
+					Mua hàng sản phẩm
 				</Typography>
 				<ProductsTable />
 				<Button
@@ -36,7 +36,7 @@ function ProductsSection() {
 						m: 1,
 					}}
 				>
-					View All Products
+					Xem tất cả sản phẩm
 				</Button>
 			</Stack>
 		</Card>
@@ -49,7 +49,7 @@ const PURCHASES_DATA = [
 		product: productsData.find((product) => product?.id === 1),
 		sold: '3,345',
 		stock: {
-			title: '20 remaining',
+			title: 'Còn 20',
 			status: 'error',
 		},
 		gain: 33.34,
@@ -59,7 +59,7 @@ const PURCHASES_DATA = [
 		product: productsData.find((product) => product?.id === 2),
 		sold: '720',
 		stock: {
-			title: 'In stock',
+			title: 'Còn hàng',
 			status: 'success',
 		},
 		gain: -21.2,
@@ -69,7 +69,7 @@ const PURCHASES_DATA = [
 		product: productsData.find((product) => product?.id === 3),
 		sold: '1,445',
 		stock: {
-			title: 'In stock',
+			title: 'Còn hàng',
 			status: 'success',
 		},
 		gain: 23.34,
@@ -79,7 +79,7 @@ const PURCHASES_DATA = [
 		product: productsData.find((product) => product?.id === 4),
 		sold: '2,500',
 		stock: {
-			title: '45 remaining',
+			title: 'Còn 45',
 			status: 'warning',
 		},
 		gain: 28.78,
@@ -89,7 +89,7 @@ const PURCHASES_DATA = [
 		product: productsData.find((product) => product?.id === 5),
 		sold: '223',
 		stock: {
-			title: 'Paused',
+			title: 'Tạm dừng',
 			status: '',
 		},
 		gain: -18.18,
@@ -111,16 +111,16 @@ const STATUS_CONFIG = {
 function ProductsTable() {
 	return (
 		<TableContainer>
-			<Table aria-label="products purchases table" size="medium">
+			<Table aria-label="bảng mua hàng sản phẩm" size="medium">
 				<TableHead>
 					<TableRow>
 						<TableCell> </TableCell>
 						<TableCell align="left" padding="none">
-							Item Details
+							Chi tiết sản phẩm
 						</TableCell>
-						<TableCell align="right">Sold</TableCell>
-						<TableCell align="left">Gain</TableCell>
-						<TableCell align="right">Actions</TableCell>
+						<TableCell align="right">Đã bán</TableCell>
+						<TableCell align="left">Tăng trưởng</TableCell>
+						<TableCell align="right">Thao tác</TableCell>
 					</TableRow>
 				</TableHead>
 				<TableBody>
@@ -138,7 +138,7 @@ function ProductsTableRow({ purchase }) {
 	return (
 		<TableRow hover>
 			<TableCell>
-				<img alt="User Img" src={product?.productImg} height={40} />
+				<img alt="Ảnh sản phẩm" src={product?.productImg} height={40} />
 			</TableCell>
 			<TableCell align="left" padding="none">
 				<Link
@@ -189,7 +189,7 @@ function ProductsTableRow({ purchase }) {
 						{gain}
 						%&nbsp;
 					</Typography>
-					from last week
+					so với tuần trước
 				</Typography>
 			</TableCell>
 			<TableCell align="center">

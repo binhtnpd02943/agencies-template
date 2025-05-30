@@ -15,21 +15,16 @@ import ActivitiesCard from './activitiesSection';
 function Dashboard3() {
 	return (
 		<>
-			<PageHeader title="Dashboard 03">
-				<Breadcrumbs
-					aria-label="breadcrumb"
-					sx={{
-						textTransform: 'uppercase',
-					}}
-				>
+			<PageHeader title="Tỷ lệ khiếu nại">
+				<Breadcrumbs aria-label="breadcrumb" sx={{ textTransform: 'uppercase' }}>
 					<Link underline="hover" href="#!">
-						Inicio
+						Trang chủ
 					</Link>
-					<Typography color="text.tertiary">Dashboard</Typography>
+					<Typography color="text.tertiary">Tỷ lệ khiếu nại</Typography>
 				</Breadcrumbs>
 			</PageHeader>
 			<Grid container spacing={2}>
-				<Grid item xs={12} sm={12} md={12}>
+				<Grid item xs={12}>
 					<StatsSection />
 				</Grid>
 				<Grid item xs={12} sm={6} md={4}>
@@ -41,10 +36,10 @@ function Dashboard3() {
 				<Grid item xs={12} sm={6} md={3}>
 					<SuggestedPeople />
 				</Grid>
-				<Grid item xs={12} sm={12} md={12}>
+				<Grid item xs={12}>
 					<ProductsSection />
 				</Grid>
-				<Grid item xs={12} sm={12} md={12}>
+				<Grid item xs={12}>
 					<SalesOverviewCard />
 				</Grid>
 			</Grid>

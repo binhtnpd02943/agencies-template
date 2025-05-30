@@ -1,4 +1,3 @@
-// MUI
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
@@ -7,17 +6,12 @@ import PageHeader from '@/components/pageHeader';
 
 function WelcomeSection() {
 	return (
-		<PageHeader title="Dashboard 01">
-			<Breadcrumbs
-				aria-label="breadcrumb"
-				sx={{
-					textTransform: 'uppercase',
-				}}
-			>
+		<PageHeader title="Thống kê doanh thu">
+			<Breadcrumbs aria-label="breadcrumb" sx={{ textTransform: 'uppercase' }}>
 				<Link underline="hover" href="#!">
-					Inicio
+					Trang chủ
 				</Link>
-				<Typography color="text.tertiary">Dashboard</Typography>
+				<Typography color="text.tertiary">Thống kê doanh thu</Typography>
 			</Breadcrumbs>
 		</PageHeader>
 	);

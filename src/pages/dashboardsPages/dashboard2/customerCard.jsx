@@ -19,16 +19,16 @@ function CustomersOverviewCard() {
 	};
 	return (
 		<Card>
-			<CardHeader title="Customer Overview" size="small">
+			<CardHeader title="Tổng quan khách hàng" size="small">
 				<ButtonGroup variant="outlined" size="small" aria-label="temporaly button group">
 					<TabButton changeTab={changeTab} tabKey="day" activeView={viewBy}>
-						Day
+						Ngày
 					</TabButton>
 					<TabButton changeTab={changeTab} tabKey="week" activeView={viewBy}>
-						Week
+						Tuần
 					</TabButton>
 					<TabButton changeTab={changeTab} tabKey="month" activeView={viewBy}>
-						Month
+						Tháng
 					</TabButton>
 				</ButtonGroup>
 			</CardHeader>
@@ -108,31 +108,31 @@ function getCustomerGraphConfig(config) {
 		series: {
 			day: [
 				{
-					name: 'New Customer',
+					name: 'Khách hàng mới',
 					data: [2.0, 3.0, 6.0, 5.0, 7.0, 8.0, 10.0],
 				},
 				{
-					name: 'Returning Customer',
+					name: 'Khách quay lại',
 					data: [1.0, 2.0, 5.0, 3.0, 5.0, 6.0, 9.0],
 				},
 			],
 			week: [
 				{
-					name: 'New Customer',
+					name: 'Khách hàng mới',
 					data: [5.0, 4.0, 9.0, 6.0, 8.0, 11.0, 7.0],
 				},
 				{
-					name: 'Returning Customer',
+					name: 'Khách quay lại',
 					data: [4.0, 3.0, 7.0, 4.0, 6.0, 9.0, 7.0],
 				},
 			],
 			month: [
 				{
-					name: 'New Customer',
+					name: 'Khách hàng mới',
 					data: [5.0, 6.0, 3.0, 5.0, 6.0, 11.0, 4.0],
 				},
 				{
-					name: 'Returning Customer',
+					name: 'Khách quay lại',
 					data: [4.0, 5.0, 2.0, 4.0, 5.0, 7.0, 3.0],
 				},
 			],

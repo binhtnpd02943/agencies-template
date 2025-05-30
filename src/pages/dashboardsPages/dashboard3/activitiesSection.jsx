@@ -10,23 +10,23 @@ import customersData from '@/_mocks/customers';
 
 const ACTIVITIES_DATA = [
 	{
-		title: 'Closed a deal!',
+		title: 'Đã chốt giao dịch!',
 		user: customersData.find((product) => product?.id === 6),
 	},
 	{
-		title: 'Just achive daily budget!',
+		title: 'Vừa đạt ngân sách ngày!',
 		user: customersData.find((product) => product?.id === 7),
 	},
 	{
-		title: 'Hot!',
+		title: 'Nổi bật!',
 		user: customersData.find((product) => product?.id === 8),
 	},
 	{
-		title: 'Just archive monthly budget',
+		title: 'Vừa đạt ngân sách tháng',
 		user: customersData.find((product) => product?.id === 9),
 	},
 	{
-		title: 'Just archive monthly budget',
+		title: 'Vừa đạt ngân sách tháng',
 		user: customersData.find((product) => product?.id === 10),
 	},
 ];
@@ -38,8 +38,8 @@ function ActivitiesCard() {
 				height: '100%',
 			}}
 		>
-			<CardHeader title="Users Activities" size="small" subtitle="Last activity was 1 hour ago">
-				<Button size="small">See All</Button>
+			<CardHeader title="Hoạt động người dùng" size="small" subtitle="Hoạt động gần nhất cách đây 1 giờ">
+				<Button size="small">Xem tất cả</Button>
 			</CardHeader>
 			<Stack direction="column" height="100%" py={2}>
 				{ACTIVITIES_DATA.map((activity, index) => (

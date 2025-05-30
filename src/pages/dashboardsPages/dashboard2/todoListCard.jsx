@@ -11,22 +11,22 @@ function TodoListCard() {
 	return (
 		<Card>
 			<CardHeader
-				title="Todo Item List"
+				title="Danh sách công việc"
 				size="small"
 				sx={{
 					mb: 2,
 				}}
 			/>
 			<FormGroup>
-				<TodoItem text="Do something" defaultChecked />
-				<TodoItem text="Do more stuff" />
-				<TodoItem text="Do something else" defaultChecked />
-				<TodoItem text="Do something again" defaultChecked />
-				<TodoItem text="Do something more" defaultChecked />
-				<TodoItem text="Do even more" />
-				<TodoItem text="Do something more" defaultChecked />
-				<TodoItem text="Finish something" />
-				<TodoItem text="Finish something more" />
+				<TodoItem text="Làm một việc gì đó" defaultChecked />
+				<TodoItem text="Làm thêm việc khác" />
+				<TodoItem text="Làm việc khác nữa" defaultChecked />
+				<TodoItem text="Làm lại một việc" defaultChecked />
+				<TodoItem text="Làm thêm một việc nữa" defaultChecked />
+				<TodoItem text="Làm nhiều việc hơn" />
+				<TodoItem text="Làm thêm một việc nữa" defaultChecked />
+				<TodoItem text="Hoàn thành một việc" />
+				<TodoItem text="Hoàn thành thêm một việc" />
 			</FormGroup>
 		</Card>
 	);

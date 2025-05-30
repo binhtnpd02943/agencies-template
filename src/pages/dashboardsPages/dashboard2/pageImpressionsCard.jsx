@@ -62,7 +62,7 @@ function PageImpressionsCard() {
 	return (
 		<Card type="none">
 			<Stack direction="column" spacing={0} px={3} pt={3}>
-				<CardHeader title="Page Impressions" size="small" />
+				<CardHeader title="Lượt hiển thị trang" size="small" />
 				<Typography variant="body2" fontSize={35} color="primary.main">
 					{counter.toLocaleString()}
 				</Typography>
@@ -82,7 +82,7 @@ function PageImpressionsCard() {
 						-2.5%
 					</Typography>
 					<Typography variant="body1" color="text.secondary">
-						change from yesterday
+						thay đổi so với hôm qua
 					</Typography>
 				</Stack>
 			</Stack>

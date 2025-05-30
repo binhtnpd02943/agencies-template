@@ -24,27 +24,27 @@ const NAV_LINKS_CONFIG = [
 	{
 		id: uuid(),
 		type: 'group',
-		title: 'Trang chủ',
+		title: 'Tổng quan hệ thống',
 		Icon: BarChartOutlinedIcon,
 		menuChildren: [
 			{
-				title: 'Dashboard01',
+				title: 'Thống kê doanh thu',
 				href: '/dashboards/dashboard1',
 			},
 			{
-				title: 'Dashboard02',
+				title: 'Hiệu suất đại lý',
 				href: '/dashboards/dashboard2',
 			},
 			{
-				title: 'Dashboard03',
+				title: 'Tỷ lệ khiếu nại',
 				href: '/dashboards/dashboard3',
 			},
 			{
-				title: 'Dashboard04',
+				title: 'Phân tích khu vực',
 				href: '/dashboards/dashboard4',
 			},
 			{
-				title: 'Dashboard05',
+				title: 'Tăng trưởng theo thời gian',
 				href: '/dashboards/dashboard5',
 			},
 		],
@@ -52,28 +52,28 @@ const NAV_LINKS_CONFIG = [
 	{
 		id: uuid(),
 		type: 'group',
-		title: 'Quản lý đại lý',
+		title: 'Quản lý tổ chức đại lý',
 		Icon: WebOutlinedIcon,
 		menuChildren: [
 			{
-				title: 'Quản lý đại lý',
+				title: 'Danh sách đại lý',
 				href: 'agencies/list',
 			},
 			{
-				title: 'Notifications',
+				title: 'Thông báo hệ thống',
 				href: '/pages/notifications',
 			},
 			{
-				id: uuid(),
-				title: 'Pricing Pages',
+				id: 'b8357460-3d09-42ce-9bb8-ed1662c75bfd',
+				title: 'Chính sách & gói sản phẩm',
 				type: 'group',
 				menuChildren: [
 					{
-						title: 'Pricing 1',
+						title: 'Gói cơ bản',
 						href: '/pages/pricing/pricing1',
 					},
 					{
-						title: 'Pricing 2',
+						title: 'Gói nâng cao',
 						href: '/pages/pricing/pricing2',
 					},
 				],
@@ -83,28 +83,28 @@ const NAV_LINKS_CONFIG = [
 	{
 		id: uuid(),
 		type: 'group',
-		title: 'Quản lý đại lý',
+		title: 'Nhân sự & phân quyền',
 		Icon: AutoStoriesOutlinedIcon,
 		menuChildren: [
 			{
-				title: 'Account Settings',
+				title: 'Cài đặt tài khoản',
 				href: '/pages/settings',
 			},
 			{
-				title: 'Notifications',
+				title: 'Thông báo cá nhân',
 				href: '/pages/notifications',
 			},
 			{
-				id: uuid(),
-				title: 'Pricing Pages',
+				id: '60b87da9-3789-4c45-9b90-3931de0ab092',
+				title: 'Phân quyền người dùng',
 				type: 'group',
 				menuChildren: [
 					{
-						title: 'Pricing 1',
+						title: 'Quản lý trưởng nhóm',
 						href: '/pages/pricing/pricing1',
 					},
 					{
-						title: 'Pricing 2',
+						title: 'Quản lý nhân viên',
 						href: '/pages/pricing/pricing2',
 					},
 				],
@@ -114,76 +114,69 @@ const NAV_LINKS_CONFIG = [
 	{
 		id: uuid(),
 		type: 'group',
-		title: 'Theme',
+		title: 'Cấu hình hệ thống',
 		Icon: PaletteOutlinedIcon,
 		menuChildren: [
 			{
-				title: 'Paleta de Colores',
+				title: 'Màu giao diện',
 				href: '/theme/colors',
 			},
 			{
-				title: 'Tipografia',
+				title: 'Kiểu chữ',
 				href: '/theme/typography',
 			},
 			{
-				title: 'Sombras',
+				title: 'Hiệu ứng giao diện',
 				href: '/theme/boxShadow',
 			},
-
-			/* {
-				title: 'Iconos',
-				href: '/theme/icons',
-			}, */
 			{
-				title: 'Utilities WIP',
-				// Breakpoints
+				title: 'Công cụ hiển thị',
 				href: '/theme/utils',
 			},
-			// libraries/ packgaes ej.> moment
 		],
 	},
 	{
 		id: uuid(),
 		type: 'group',
-		title: 'Apps',
+		title: 'Tiện ích hỗ trợ',
 		Icon: InventoryOutlinedIcon,
 		menuChildren: [
 			{
-				title: 'Ecommerce WIP',
-				href: '/profile WIP',
+				title: 'Quản lý hợp đồng',
+				href: '/contracts',
 			},
 			{
-				title: 'Social Feed WIP',
-				href: '/profile WIP',
+				title: 'Theo dõi chăm sóc khách hàng',
+				href: '/customer-care',
 			},
 			{
-				title: 'Calendar WIP',
-				href: '/profile WIP',
+				title: 'Lịch trình công việc',
+				href: '/calendar',
 			},
 			{
-				title: 'Chat WIP',
-				href: '/profile WIP',
+				title: 'Tin nhắn nội bộ',
+				href: '/chat',
 			},
 		],
 	},
 	{
 		id: uuid(),
 		type: 'item',
-		title: 'Sample Tab',
+		title: 'Báo cáo mẫu',
 		Icon: WebOutlinedIcon,
 		href: '/samplePage',
 	},
 	{
 		id: uuid(),
 		type: 'item',
-		title: 'Widgets',
+		title: 'Widget thống kê',
 		Icon: WidgetsOutlinedIcon,
 		href: '/widgets',
 	},
 	{
 		id: uuid(),
 		type: 'item',
-		title: 'Perfil',
+		title: 'Hồ sơ cá nhân',
 		Icon: AccountCircleOutlinedIcon,
 		href: '/profile',
 	},

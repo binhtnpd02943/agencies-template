@@ -23,14 +23,14 @@ function WelcomeCard() {
 	return (
 		<Stack spacing={2}>
 			<Typography variant="h5" fontSize={24}>
-				Bienvenida de nuevo, Elizabeth!
+				Chào mừng trở lại, Elizabeth!
 			</Typography>
 			<Typography variant="body2" color="text.tertiary" fontSize={15}>
-				Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi
-				vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+				Cùng theo dõi hiệu suất phân phối bảo hiểm theo từng khu vực để tối ưu hoá chiến lược kinh doanh và phát
+				triển mạng lưới đại lý hiệu quả hơn.
 			</Typography>
 			<Typography pt={4} variant="subtitle1" fontWeight="500" textTransform="uppercase">
-				Your earning summary
+				Tổng kết thu nhập của bạn
 			</Typography>
 			<Grid
 				container
@@ -51,15 +51,16 @@ function WelcomeCard() {
 				}}
 			>
 				<Grid item xs={12} sm={6} md={6}>
-					<EarningCard title="Today's earnings" value={950} />
+					<EarningCard title="Thu nhập hôm nay" value={950} />
 				</Grid>
 				<Grid item xs={12} sm={6} md={6}>
-					<EarningCard title="This week's earnings" value="12,420" />
+					<EarningCard title="Thu nhập tuần này" value="12,420" />
 				</Grid>
 			</Grid>
 		</Stack>
 	);
 }
+
 function EarningCard({ title, value }) {
 	return (
 		<Stack spacing={0} p={3}>
@@ -67,7 +68,7 @@ function EarningCard({ title, value }) {
 				{title}
 			</Typography>
 			<Typography fontSize={30}>${value}</Typography>
-			<Typography variant="caption">Based on list price</Typography>
+			<Typography variant="caption">Dựa trên giá niêm yết</Typography>
 		</Stack>
 	);
 }
@@ -83,11 +84,11 @@ function SideCard() {
 		>
 			<Stack p={1} spacing={4} direction="column" textAlign="center">
 				<Typography variant="h3" fontWeight="500">
-					Introducing the responsive admin dashboard slim template made with Reactjs and material-ui (MUIv5)
+					Giới thiệu giao diện quản trị hệ thống đại lý bảo hiểm phản hồi linh hoạt với Reactjs và MUI (v5)
 				</Typography>
 				<Typography variant="body2" color="text.tertiary" fontSize={15}>
-					Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id,
-					metus...
+					Nền tảng hỗ trợ phân tích khu vực kinh doanh, thống kê hiệu suất, và quản lý đội ngũ đại lý hiệu
+					quả.
 				</Typography>
 				<Stack
 					direction={{
@@ -98,24 +99,12 @@ function SideCard() {
 					width="100%"
 				>
 					<Button variant="contained" fullWidth disableElevation size="large" color="primary">
-						Account Settings
+						Cài đặt tài khoản
 					</Button>
 					<Button variant="contained" fullWidth disableElevation size="large" color="secondary">
-						Upgrade account
+						Nâng cấp tài khoản
 					</Button>
 				</Stack>
-				{/* <Grid container spacing={2}>
-					<Grid item xs={12} sm={6} md={6}>
-						<Button variant="contained" fullWidth>
-							sdf
-						</Button>
-					</Grid>
-					<Grid item xs={12} sm={6} md={6}>
-						<Button variant="contained" fullWidth>
-							sdf
-						</Button>
-					</Grid>
-				</Grid> */}
 			</Stack>
 		</Card>
 	);

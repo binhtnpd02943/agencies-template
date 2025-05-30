@@ -51,7 +51,7 @@ function ProductCard({ product }) {
 	return (
 		<Card>
 			<Stack>
-				<Typography variant="caption">Product ID: #{id}</Typography>
+				<Typography variant="caption">Mã sản phẩm: #{id}</Typography>
 				<Typography variant="subtitle1">{name} </Typography>
 				<Typography variant="caption">
 					By:
@@ -65,7 +65,7 @@ function ProductCard({ product }) {
 							{earnings}
 						</Typography>
 						<Typography variant="body2" color="text.secondary">
-							Earnings for today
+							Doanh thu hôm nay
 						</Typography>
 					</div>
 					<div>
@@ -73,7 +73,7 @@ function ProductCard({ product }) {
 							${expenses}
 						</Typography>
 						<Typography variant="body2" color="text.secondary">
-							Expenses for today
+							Chi phí hôm nay
 						</Typography>
 					</div>
 				</Stack>
@@ -85,19 +85,19 @@ function Header() {
 	return (
 		<CardHeader
 			size="large"
-			title="Most Popular Products"
+			title="Sản phẩm phổ biến nhất"
 			subtitle={
 				<>
-					<CalendarMonthOutlinedIcon fontSize="small" /> January 01, 2023 - January 31, 2023
+					<CalendarMonthOutlinedIcon fontSize="small" /> 01/01/2023 - 31/01/2023
 				</>
 			}
 		>
 			<Stack direction="row" alignItems="center" spacing={1}>
 				<Button variant="contained" size="medium" color="primary">
-					Top Rated Products
+					Sản phẩm được đánh giá cao
 				</Button>
 				<Button variant="contained" size="medium" color="primary">
-					View All Products
+					Xem tất cả sản phẩm
 				</Button>
 			</Stack>
 		</CardHeader>

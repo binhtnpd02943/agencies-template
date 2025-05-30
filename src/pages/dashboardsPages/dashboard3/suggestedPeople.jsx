@@ -18,8 +18,8 @@ function SuggestedPeople() {
 	return (
 		<Card type="none">
 			<CardHeader
-				title="People you may know"
-				subtitle="Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi."
+				title="Những người bạn có thể biết"
+				subtitle="Kết nối với bạn bè, đồng nghiệp hoặc những người bạn có thể quen biết để mở rộng mạng lưới của bạn."
 				size="small"
 				sx={{
 					p: 3,
@@ -60,7 +60,7 @@ function UserListItem({ user }) {
 					</Typography>
 					<Typography variant="caption">{rol}</Typography>
 				</span>
-				<Tooltip title="Add Friend">
+				<Tooltip title="Kết bạn">
 					<IconButton>
 						<PersonAddAlt1OutlinedIcon fontSize="small" color="primary" />
 					</IconButton>

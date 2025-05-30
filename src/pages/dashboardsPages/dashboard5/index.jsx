@@ -43,8 +43,8 @@ function Header() {
 				mt: 4,
 			}}
 			size="large"
-			title="Good morning, Katherine!"
-			subtitle={`Today is ${new Date().toLocaleDateString('default', {
+			title="Chào buổi sáng, Katherine!"
+			subtitle={`Hôm nay là ${new Date().toLocaleDateString('vi-VN', {
 				weekday: 'long',
 				year: 'numeric',
 				month: 'long',
@@ -63,8 +63,8 @@ function Header() {
 						$1,433
 					</Typography>
 					<Typography variant="caption" textTransform="uppercase">
-						Earnings <br />
-						for today
+						Thu nhập <br />
+						hôm nay
 					</Typography>
 				</Stack>
 				<Stack direction="row" spacing={2} alignItems="center">
@@ -72,8 +72,8 @@ function Header() {
 						$296
 					</Typography>
 					<Typography variant="caption" textTransform="uppercase">
-						Expenses <br />
-						for today
+						Chi phí <br />
+						hôm nay
 					</Typography>
 				</Stack>
 			</Stack>
@@ -83,7 +83,7 @@ function Header() {
 
 function TabsNav() {
 	const [value, setValue] = useState(0);
-	const [slot, setSlot] = useState('Today');
+	const [slot, setSlot] = useState('Hôm nay');
 
 	const handleChange = (event, newValue) => {
 		setValue(newValue);
@@ -99,28 +99,17 @@ function TabsNav() {
 				value={value}
 				onChange={handleChange}
 				variant="scrollable"
-				aria-label="grap type"
+				aria-label="chế độ xem"
 				scrollButtons="auto"
 				allowScrollButtonsMobile
 			>
-				<Tab label="Overview" />
-				<Tab label="Employee" />
-				<Tab label="Products" />
-				<Tab label="Misc" />
+				<Tab label="Tổng quan" />
+				<Tab label="Nhân sự" />
+				<Tab label="Sản phẩm" />
+				<Tab label="Khác" />
 				<Box flexGrow={1} />
-				{/* <Stack
-					spacing={0}
-					direction="row"
-					divider={<Divider orientation="vertical" flexItem />}
-				>
-					{['Today', 'This Week', 'This Month'].map((tab, i) => (
-						<Button key={i} size="small">
-							{tab}
-						</Button>
-					))}
-				</Stack> */}
 				<Stack direction="row" alignItems="center" spacing={0}>
-					{['Today', 'This Week', 'This Month'].map((tab, i) => (
+					{['Hôm nay', 'Tuần này', 'Tháng này'].map((tab, i) => (
 						<Button
 							key={i}
 							size="small"

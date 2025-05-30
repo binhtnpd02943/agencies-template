@@ -47,7 +47,7 @@ const AgencyPage = withLazyLoadably(lazy(() => import('@/pages/agency')));
 
 function Router() {
 	return (
-		<BrowserRouter basename="/slim-free-react-mui-template">
+		<BrowserRouter basename="/">
 			<ScrollToTopOnRouteChange>
 				<Routes>
 					<Route path="/" element={<MinimalLayout />}>

@@ -19,22 +19,28 @@ function SalesOverviewCard() {
 	}; */
 	return (
 		<Card>
-			<CardHeader title="Sales Overview" size="small">
+			<CardHeader title="Tổng quan doanh số" size="small">
 				<Stack direction="row" alignItems="center" spacing={0}>
-					{['day', 'week', 'month'].map((tab, i) => (
-						<Button
-							key={i}
-							size="small"
-							onClick={() => setViewBy(tab)}
-							variant={viewBy === tab ? 'outlined' : 'text'}
-							sx={{
-								textTransform: 'capitalize',
-								color: viewBy === tab ? 'primary.main' : 'text.secondary',
-							}}
-						>
-							{tab}
-						</Button>
-					))}
+					{['day', 'week', 'month'].map((tab, i) => {
+						let tabLabel = '';
+						if (tab === 'day') tabLabel = 'Ngày';
+						else if (tab === 'week') tabLabel = 'Tuần';
+						else tabLabel = 'Tháng';
+						return (
+							<Button
+								key={i}
+								size="small"
+								onClick={() => setViewBy(tab)}
+								variant={viewBy === tab ? 'outlined' : 'text'}
+								sx={{
+									textTransform: 'capitalize',
+									color: viewBy === tab ? 'primary.main' : 'text.secondary',
+								}}
+							>
+								{tabLabel}
+							</Button>
+						);
+					})}
 				</Stack>
 				{/* <ButtonGroup
 					variant="outlined"
@@ -140,31 +146,31 @@ function getCustomerGraphConfig(config) {
 		series: {
 			day: [
 				{
-					name: 'Incomes',
+					name: 'Thu nhập',
 					data: [2.0, 3.0, 6.0, 5.0, 7.0, 8.0, 10.0],
 				},
 				{
-					name: 'Expenses',
+					name: 'Chi phí',
 					data: [1.0, 2.0, 5.0, 3.0, 5.0, 6.0, 9.0],
 				},
 			],
 			week: [
 				{
-					name: 'Incomes',
+					name: 'Thu nhập',
 					data: [5.0, 4.0, 9.0, 6.0, 8.0, 11.0, 7.0],
 				},
 				{
-					name: 'Expenses',
+					name: 'Chi phí',
 					data: [4.0, 3.0, 7.0, 4.0, 6.0, 9.0, 7.0],
 				},
 			],
 			month: [
 				{
-					name: 'Incomes',
+					name: 'Thu nhập',
 					data: [5.0, 6.0, 3.0, 5.0, 6.0, 11.0, 4.0, 6.7],
 				},
 				{
-					name: 'Expenses',
+					name: 'Chi phí',
 					data: [4.0, 5.0, 2.0, 4.0, 5.0, 7.0, 3.0, 2.3],
 				},
 			],

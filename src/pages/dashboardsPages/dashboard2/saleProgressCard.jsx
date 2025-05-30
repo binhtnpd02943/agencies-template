@@ -37,7 +37,7 @@ const SALES_PROGRESS_DATA = [
 function SaleProgressCard() {
 	return (
 		<Card>
-			<CardHeader title="Sale Progress" size="small" />
+			<CardHeader title="Tiến độ bán hàng" size="small" />
 			<Stack spacing={2} mt={2}>
 				{SALES_PROGRESS_DATA.map((sale, index) => (
 					<SaleProgress key={index} saleData={sale} />
@@ -57,7 +57,7 @@ function SaleProgress({ saleData }) {
 	return (
 		<div>
 			<Typography variant="body2" color="text.secondary" gutterBottom>
-				{counter.toLocaleString()} sales
+				{counter.toLocaleString()} lượt bán
 			</Typography>
 			<LinearProgress
 				variant="determinate"
