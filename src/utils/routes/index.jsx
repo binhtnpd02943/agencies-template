@@ -44,6 +44,10 @@ const ThemeTypographyPage = withLazyLoadably(lazy(() => import('@/pages/themePag
 const ThemeColorsPage = withLazyLoadably(lazy(() => import('@/pages/themePages/themeColors')));
 const ThemeShadowPage = withLazyLoadably(lazy(() => import('@/pages/themePages/themeShadow')));
 const AgencyPage = withLazyLoadably(lazy(() => import('@/pages/agency')));
+const ContractNewPage = withLazyLoadably(lazy(() => import('@/pages/contracts/new')));
+const RenewalContractsPage = withLazyLoadably(lazy(() => import('@/pages/contracts/renewal')));
+const ClaimApprovedPage = withLazyLoadably(lazy(() => import('@/pages/claims/approved')));
+const ClaimDeniedPage = withLazyLoadably(lazy(() => import('@/pages/claims/rejected')));
 
 function Router() {
 	return (
@@ -74,6 +78,16 @@ function Router() {
 
 						<Route path="agencies/">
 							<Route path="list" element={<AgencyPage />} />
+						</Route>
+
+						<Route path="contracts/">
+							<Route path="new" element={<ContractNewPage />} />
+							<Route path="renewal" element={<RenewalContractsPage />} />
+						</Route>
+
+						<Route path="claims/">
+							<Route path="approved" element={<ClaimApprovedPage />} />
+							<Route path="rejected" element={<ClaimDeniedPage />} />
 						</Route>
 
 						<Route path="components/">

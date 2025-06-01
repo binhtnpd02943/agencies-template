@@ -114,6 +114,39 @@ const NAV_LINKS_CONFIG = [
 	{
 		id: uuid(),
 		type: 'group',
+		title: 'Hợp đồng bảo hiểm',
+		Icon: AutoStoriesOutlinedIcon,
+		menuChildren: [
+			{
+				title: 'Hợp đồng mới',
+				href: '/contracts/new',
+			},
+			{
+				title: 'Hợp đồng tái tục',
+				href: '/contracts/renewal',
+			},
+		],
+	},
+	{
+		id: uuid(),
+		type: 'group',
+		title: 'Bồi thường',
+		Icon: InventoryOutlinedIcon,
+		menuChildren: [
+			{
+				title: 'Hợp đồng chi bồi thường',
+				href: '/claims/approved',
+			},
+			{
+				title: 'Hợp đồng từ chối bồi thường',
+				href: '/claims/rejected',
+			},
+		],
+	},
+
+	{
+		id: uuid(),
+		type: 'group',
 		title: 'Cấu hình hệ thống',
 		Icon: PaletteOutlinedIcon,
 		menuChildren: [

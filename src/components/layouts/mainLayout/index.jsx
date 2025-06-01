@@ -32,7 +32,7 @@ function FabButton() {
 		</Fab>
 	);
 }
-function MainLayout({ container = 'lg', pb = true }) {
+function MainLayout({ container = 'xl', pb = true }) {
 	const location = useLocation();
 	const { pageTransitions } = useSelector(selectThemeConfig);
 
@@ -47,6 +47,7 @@ function MainLayout({ container = 'lg', pb = true }) {
 					...(pb && {
 						pb: 5,
 					}),
+					// maxWidth: '2000px',
 				}}
 			>
 				{pageTransitions ? (
