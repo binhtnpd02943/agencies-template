@@ -139,7 +139,7 @@ function BitcoinEarningsSection() {
 						BTC
 					</Typography>
 				</Typography>
-				<Typography variant="subtitle1">THU NHẬP BITCOIN</Typography>
+				<Typography variant="subtitle1">DOANH THU BẢO HIỂM</Typography>
 				<Typography variant="body2" color="text.secondary" pb={2}>
 					Chào mừng bạn đến với bảng điều khiển. Theo dõi thu nhập, ví và lượng khách truy cập của bạn tại
 					đây.

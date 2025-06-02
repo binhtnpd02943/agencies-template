@@ -14,7 +14,7 @@ import ClaimApprovedManagementTable from './widgets/approved/tableApproved';
 function ClaimApprovedPage() {
 	return (
 		<>
-			<PageHeader title="Quản lý đại lý" subtitle="Sample Page">
+			<PageHeader title="Hợp đồng chi bồi thường" subtitle="Sample Page">
 				<Breadcrumbs
 					aria-label="breadcrumb"
 					sx={{
@@ -24,7 +24,7 @@ function ClaimApprovedPage() {
 					<Link underline="hover" href="#!">
 						Inicio
 					</Link>
-					<Typography color="text.tertiary">Sample</Typography>
+					<Typography color="text.tertiary">Hợp đồng chi bồi thường</Typography>
 				</Breadcrumbs>
 			</PageHeader>
 			<Card
@@ -33,7 +33,7 @@ function ClaimApprovedPage() {
 					minHeight: '60vh',
 				}}
 			>
-				<CardHeader title="Section Title" subtitle="Section subtitle">
+				<CardHeader title="Danh sách hợp đồng chi bồi thường" subtitle="Bộ lọc và sắp xếp">
 					Optional Action
 				</CardHeader>
 

@@ -14,7 +14,7 @@ import RenewalManagementTable from './widgets/renewal/tableRenewal';
 function RenewalContractsPage() {
 	return (
 		<>
-			<PageHeader title="Quản lý đại lý" subtitle="Sample Page">
+			<PageHeader title="Hợp đồng tái tục" subtitle="Sample Page">
 				<Breadcrumbs
 					aria-label="breadcrumb"
 					sx={{
@@ -24,7 +24,7 @@ function RenewalContractsPage() {
 					<Link underline="hover" href="#!">
 						Inicio
 					</Link>
-					<Typography color="text.tertiary">Sample</Typography>
+					<Typography color="text.tertiary">Hợp đồng tái tục</Typography>
 				</Breadcrumbs>
 			</PageHeader>
 			<Card
@@ -33,7 +33,7 @@ function RenewalContractsPage() {
 					minHeight: '60vh',
 				}}
 			>
-				<CardHeader title="Section Title" subtitle="Section subtitle">
+				<CardHeader title="Danh sách hợp đồng tái tục" subtitle="Bộ lọc và sắp xếp">
 					Optional Action
 				</CardHeader>
 

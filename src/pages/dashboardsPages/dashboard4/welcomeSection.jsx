@@ -23,12 +23,13 @@ function WelcomeCard() {
 	return (
 		<Stack spacing={2}>
 			<Typography variant="h5" fontSize={24}>
-				Chào mừng trở lại, Elizabeth!
+				Hiệu suất Phân phối Theo Khu Vực
 			</Typography>
 			<Typography variant="body2" color="text.tertiary" fontSize={15}>
-				Cùng theo dõi hiệu suất phân phối bảo hiểm theo từng khu vực để tối ưu hoá chiến lược kinh doanh và phát
-				triển mạng lưới đại lý hiệu quả hơn.
+				Theo dõi chi tiết hiệu quả phân phối bảo hiểm ở từng khu vực, hỗ trợ bạn đưa ra chiến lược kinh doanh
+				tối ưu và phát triển mạng lưới đại lý hiệu quả.
 			</Typography>
+
 			<Typography pt={4} variant="subtitle1" fontWeight="500" textTransform="uppercase">
 				Tổng kết thu nhập của bạn
 			</Typography>
@@ -84,12 +85,13 @@ function SideCard() {
 		>
 			<Stack p={1} spacing={4} direction="column" textAlign="center">
 				<Typography variant="h3" fontWeight="500">
-					Giới thiệu giao diện quản trị hệ thống đại lý bảo hiểm phản hồi linh hoạt với Reactjs và MUI (v5)
+					Giao Diện Quản Trị Đại Lý Bảo Hiểm Phản Hồi Linh Hoạt
 				</Typography>
 				<Typography variant="body2" color="text.tertiary" fontSize={15}>
-					Nền tảng hỗ trợ phân tích khu vực kinh doanh, thống kê hiệu suất, và quản lý đội ngũ đại lý hiệu
-					quả.
+					Nền tảng hỗ trợ phân tích chi tiết theo khu vực, thống kê hiệu suất và quản lý đội ngũ đại lý tối
+					ưu.
 				</Typography>
+
 				<Stack
 					direction={{
 						xs: 'column',

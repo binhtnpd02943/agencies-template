@@ -15,7 +15,7 @@ import ContractNewManagementTable from './widgets/new/tableNew';
 function ContractNewPage() {
 	return (
 		<>
-			<PageHeader title="Quản lý đại lý" subtitle="Sample Page">
+			<PageHeader title="Hợp đồng mới" subtitle="Sample Page">
 				<Breadcrumbs
 					aria-label="breadcrumb"
 					sx={{
@@ -25,7 +25,7 @@ function ContractNewPage() {
 					<Link underline="hover" href="#!">
 						Inicio
 					</Link>
-					<Typography color="text.tertiary">Sample</Typography>
+					<Typography color="text.tertiary">Hợp đồng mới</Typography>
 				</Breadcrumbs>
 			</PageHeader>
 			<Card
@@ -34,7 +34,7 @@ function ContractNewPage() {
 					minHeight: '60vh',
 				}}
 			>
-				<CardHeader title="Section Title" subtitle="Section subtitle">
+				<CardHeader title="Danh sách hợp đồng mới" subtitle="Bộ lọc và sắp xếp">
 					Optional Action
 				</CardHeader>
 

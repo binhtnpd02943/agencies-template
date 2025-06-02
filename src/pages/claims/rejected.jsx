@@ -14,7 +14,7 @@ import ClaimRejectedManagementTable from './widgets/rejected/tableRejected';
 function ClaimRejectedPage() {
 	return (
 		<>
-			<PageHeader title="Quản lý đại lý" subtitle="Sample Page">
+			<PageHeader title="Hợp đồng từ chối bồi thường" subtitle="Sample Page">
 				<Breadcrumbs
 					aria-label="breadcrumb"
 					sx={{
@@ -24,7 +24,7 @@ function ClaimRejectedPage() {
 					<Link underline="hover" href="#!">
 						Inicio
 					</Link>
-					<Typography color="text.tertiary">Sample</Typography>
+					<Typography color="text.tertiary">Hợp đồng từ chối bồi thường</Typography>
 				</Breadcrumbs>
 			</PageHeader>
 			<Card
@@ -33,7 +33,7 @@ function ClaimRejectedPage() {
 					minHeight: '60vh',
 				}}
 			>
-				<CardHeader title="Section Title" subtitle="Section subtitle">
+				<CardHeader title="Danh sách hợp đồng từ chối bồi thường" subtitle="Bộ lọc và sắp xếp">
 					Optional Action
 				</CardHeader>
 

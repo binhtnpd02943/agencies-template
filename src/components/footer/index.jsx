@@ -22,7 +22,7 @@ import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 // assets
-import logo from '@/assets/images/logo/png/Color_logo_nobg.png';
+import logo from '@/assets/images/logo/png/logo.png';
 
 function Footer() {
 	return (
